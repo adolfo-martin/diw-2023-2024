@@ -1,0 +1,47 @@
+:root {
+    font-size: 32px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: solid 3px black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: darkblue;
+    color: gold;
+}
+
+tfoot {
+    background-color: blue;
+    color: white;
+}
+
+/* odd es impar, even es par */
+/* .odd {
+    background-color: lightblue;
+    color: darkblue;
+} */
+
+tbody tr:nth-child(2n+1) {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+/* .title-table {
+    font-size: 1.5rem;
+} */
+
+/* thead:nth-child(1) {
+    font-size: 2rem;
+} */
+
+thead:first-child {
+    font-size: 2rem;
+}
