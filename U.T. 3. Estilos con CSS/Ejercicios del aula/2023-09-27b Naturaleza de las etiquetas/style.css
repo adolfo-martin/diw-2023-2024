@@ -1,0 +1,49 @@
+:root {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: bisque;
+    border: solid 10px black;
+}
+
+h1,
+p,
+div,
+span {
+    border: solid 5px red;
+
+}
+
+b {
+    border: solid 5px green;
+}
+
+table,
+tr,
+td {
+    border: solid 5px blue;
+    border-collapse: collapse;
+}
+
+/* table {
+    display: block;
+} */
+
+b[data-bloque="si"] {
+    display: block;
+}
+
+[data-ampliada="si"] {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background: gold;
+}

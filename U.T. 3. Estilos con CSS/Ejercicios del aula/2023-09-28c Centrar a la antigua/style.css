@@ -1,0 +1,32 @@
+.outer-box {
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+}
+
+.inner-box {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+.circle {
+    box-sizing: border-box;
+    background-color: orange;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    border: solid 20px green;
+    bottom: 125px;
+    right: 125px;
+    z-index: -1;
+}

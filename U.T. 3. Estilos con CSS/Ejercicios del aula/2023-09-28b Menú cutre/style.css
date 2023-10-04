@@ -1,0 +1,46 @@
+:root {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* viewport height */
+    min-height: 100vh;
+    /* height: auto; */
+    height: 100vh;
+    /* viewport width */
+    /* width: 100vw; */
+    background-color: red;
+    border: solid 10px chartreuse;
+}
+
+header {
+    background-color: darkblue;
+    color: lightblue;
+    height: 15%;
+    font-size: 2rem;
+}
+
+.boton-menu {
+    scale: 3;
+}
+
+.boton-menu:not(:checked)+nav {
+    display: none;
+}
+
+.boton-menu:checked+nav {
+    display: block;
+}
+
+nav {
+    background-color: lightblue;
+    width: 20%;
+    height: 100%;
+}

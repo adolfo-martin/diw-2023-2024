@@ -1,0 +1,62 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* viewport height */
+    background-color: rgb(250, 197, 205);
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: static;
+}
+
+.box-1 {
+    background-color: red;
+    position: fixed;
+    /* bottom: 100px;
+    right: 100px; */
+    top: 50px;
+    right: 50px;
+    /* z-index: -1; */
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box-2 {
+    background-color: green;
+    /* position: absolute; */
+}
+
+.box-3 {
+    background-color: blue;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.box-4 {
+    background-color: yellow;
+    /* position: absolute; */
+}
+
+p:nth-child(7) {
+    background-color: aqua;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}

@@ -1,0 +1,42 @@
+:root {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+*,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+.notification {
+    background-color: grey;
+    color: white;
+    padding: 0.25rem 1.25rem 0.25rem 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+
+.notification::after {
+    content: attr(data-pending-messages);
+    font-size: 0.4em;
+    padding: 0.25em;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.25em;
+    right: 1em;
+    width: 1.7em;
+    height: 1.7em;
+    display: grid;
+    place-items: center;
+}
