@@ -1,0 +1,73 @@
+:root {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f8cfcf;
+    padding: 50px;
+}
+
+
+/* input[type="radio"] {
+    accent-color: red;
+} */
+
+.switch {
+    border: solid 5px red;
+    border-radius: 0.5rem;
+    width: 2rem;
+    height: 1rem;
+    appearance: none;
+    position: relative;
+    font-size: 1rem;
+    transition-property: left border-color;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+}
+
+/* .switch:nth-child(4) {
+    left: 50px;
+    top: 50px;
+} */
+
+.switch:checked {
+    border-color: green;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    background-image: url(./borrar-fondo-imagen-1200x675.webp);
+    background-size: cover;
+    background-color: red;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.15em;
+    transition-property: left background-color;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+}
+
+.switch:checked::before {
+    background-color: green;
+    left: 1.10em;
+}
+
+
+label {
+    font-size: 1rem;
+}
