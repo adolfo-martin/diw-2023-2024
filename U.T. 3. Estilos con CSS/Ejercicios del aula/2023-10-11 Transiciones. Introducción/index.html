@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .box-red {
+            background-color: red;
+        }
+
+        .box-yellow {
+            background-color: yellow;
+        }
+
+        .box-red {
+            /* transition: width 2s linear 1s; */
+            /* transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 3s;
+            transition-property: width height; */
+
+            transition-property: width, height, background-color;
+            transition-duration: 1s, 2s, 3s;
+            transition-timing-function: linear;
+        }
+
+        .box-red:hover {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box-red"></div>
+    <div class="box box-yellow"></div>
+
+</body>
+
+</html>
