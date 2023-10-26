@@ -1,0 +1,61 @@
+:root {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "lateral-izquierdo  encabezado  lateral-derecho"
+        "lateral-izquierdo  menu        lateral-derecho"
+        "lateral-izquierdo  principal   lateral-derecho"
+        "lateral-izquierdo  pie         lateral-derecho"
+    ;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    background-color: red;
+    grid-area: encabezado;
+}
+
+nav {
+    background-color: green;
+    grid-area: menu;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+main {
+    background-color: blue;
+    grid-area: principal;
+}
+
+aside {
+    background-color: yellow;
+}
+
+.lateral-izquierdo {
+    grid-area: lateral-izquierdo;
+}
+
+.lateral-derecho {
+    grid-area: lateral-derecho;
+}
+
+footer {
+    background-color: cyan;
+    grid-area: pie;
+}
