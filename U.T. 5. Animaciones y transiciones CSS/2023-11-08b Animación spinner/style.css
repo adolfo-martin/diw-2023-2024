@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: bisque;
+    display: grid;
+    place-items: center;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    border-top: solid 10px red;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.spinner::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-top: solid 10px green;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.spinner::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: solid 10px blue;
+    border-radius: 50%;
+    rotate: 0.25turn;
+}
+
+@keyframes spin {
+    from {
+        rotate: 0turn;
+    }
+
+    to {
+        rotate: 1turn;
+    }
+}

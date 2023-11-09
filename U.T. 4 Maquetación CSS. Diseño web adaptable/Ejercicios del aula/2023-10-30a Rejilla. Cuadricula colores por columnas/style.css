@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 1fr 1fr 2fr;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+    grid-column: span 2;
+}
+
+.amarillo {
+    background-color: yellow;
+    grid-column: span 3;
+}
+
+.gris {
+    background-color: grey;
+}
+
+.naranja {
+    background-color: orange;
+    grid-row: span 2;
+}
+
+.verde {
+    background-color: green;
+    grid-row: span 2;
+}
+
+.marron {
+    background-color: brown;
+    grid-row: span 2;
+}
+
+.negro {
+    background-color: black;
+}
+
+.oliva {
+    background-color: olive;
+}
+
+.celeste {
+    background-color: cyan;
+    grid-column: span 3;
+}

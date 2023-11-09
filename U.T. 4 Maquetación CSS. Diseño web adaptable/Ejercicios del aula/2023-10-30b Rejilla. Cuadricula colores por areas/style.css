@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 3fr 1fr 1fr 1fr 3fr; */
+    grid-template-areas:
+        "rojo      rojo      azul      azul" 3fr
+        "amarillo  amarillo  amarillo  amarillo" 3fr
+        "gris      gris      verde     marron" 1fr
+        "naranja   naranja   verde     marron" 1fr
+        "naranja   naranja   negro     oliva" 1fr
+        "celeste   celeste   celeste   celeste" 3fr
+        / 1fr 1fr 1fr 1fr
+    ;
+}
+
+.rojo {
+    background-color: red;
+    grid-area: rojo;
+}
+
+.azul {
+    background-color: blue;
+    grid-area: azul;
+}
+
+.amarillo {
+    background-color: yellow;
+    grid-area: amarillo;
+}
+
+.gris {
+    background-color: grey;
+    grid-area: gris;
+}
+
+.naranja {
+    background-color: orange;
+    grid-area: naranja;
+}
+
+.verde {
+    background-color: green;
+    grid-area: verde;
+}
+
+.marron {
+    background-color: brown;
+    grid-area: marron;
+}
+
+.negro {
+    background-color: black;
+    grid-area: negro;
+}
+
+.oliva {
+    background-color: olive;
+    grid-area: oliva;
+}
+
+.celeste {
+    background-color: cyan;
+    grid-area: celeste;
+}
