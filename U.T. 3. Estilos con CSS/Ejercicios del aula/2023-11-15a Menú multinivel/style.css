@@ -1,0 +1,48 @@
+ol {
+    list-style: none;
+}
+
+ol.level-2 {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+ol.level-2 {
+    display: block;
+}
+
+ol.level-3 {
+    display: none;
+}
+
+input[type="radio"]:checked+ol.level-3 {
+    display: block;
+}
+
+/* animation: show-sublevel 1000ms linear 0s 1 normal both; */
+/* @keyframes show-sublevel {
+    from {
+        height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        height: 100px;
+        opacity: 1;
+    }
+} */
+
+
+
+/* header {
+    background-color: yellow;
+    transition-duration: 1000ms;
+    transition-property: background-color;
+}
+
+header:hover {
+    background-color: grey;
+} */
