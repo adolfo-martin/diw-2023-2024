@@ -1,0 +1,16 @@
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked~p {
+    display: block;
+}
+
+label {
+    display: block;
+    font-weight: bolder;
+}
+
+p {
+    display: none;
+}

@@ -1,0 +1,27 @@
+:root {
+    --sprite-width: 90px;
+    --sprite-height: 90px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    border: solid 1px red;
+    width: var(--sprite-width);
+    height: var(--sprite-height);
+    background-image: url(/numeros.png);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: calc(var(--sprite-width) * -7);
+}

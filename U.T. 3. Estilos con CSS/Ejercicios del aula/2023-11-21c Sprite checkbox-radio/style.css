@@ -1,0 +1,31 @@
+:root {
+    font-size: 32px;
+    --frame-width: calc(700px / 4);
+    --frame-height: 202px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+input[type="radio"] {
+    width: var(--frame-width);
+    height: var(--frame-height);
+    appearance: none;
+    border: solid 1px red;
+    background-image: url(/radio-checkbox.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: calc(-2 * var(--frame-width));
+}
+
+input[type="radio"]:checked {
+    background-position-x: calc(-3 * var(--frame-width));
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <script type="module">
+        const spriteWidth = 90;
+
+        // document.addEventListener("DOMContentLoaded", _ => {
+        //     const nNumber = document.querySelector('.number');
+
+        //     for (let i = 8; i >= 0; i--) {
+        //         setTimeout(() => {
+        //             nNumber.style.backgroundPositionX = `${-1 * i * spriteWidth}px`;
+        //         }, (9 - i) * 1000);
+        //     }
+        // });
+
+        document.addEventListener("DOMContentLoaded", _ => {
+            const nNumber = document.querySelector('.number');
+            let i = 8;
+
+            const idInterval = setInterval(() => {
+                if (i === 0) clearInterval(idInterval);
+
+                nNumber.style.backgroundPositionX = `${-1 * i * spriteWidth}px`;
+                i--;
+            }, 1000);
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="number"></div>
+</body>
+
+</html>
