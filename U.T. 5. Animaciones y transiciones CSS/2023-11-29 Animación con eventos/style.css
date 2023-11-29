@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+.ball {
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    animation-name: ball-falling;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: calc(var(--delay) * 1s / 5);
+}
+
+@keyframes ball-falling {
+    0% {
+        bottom: 90%;
+    }
+
+    100% {
+        bottom: 10%;
+    }
+}
+
+.button {
+    --width: calc(626px / 3);
+    --height: calc(235px / 3);
+    width: var(--width);
+    height: var(--height);
+    background-image: url(/buttons.avif);
+    background-repeat: no-repeat;
+    background-position-x: calc(var(--width) * -2);
+    background-position-y: calc(var(--height) * -1);
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    scale: 0.5;
+}
+
+.clockhand {
+    background-color: aqua;
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    animation: clockhand-turning 1s linear 0s 1 normal both;
+    transform-origin: bottom;
+}
+
+@keyframes clockhand-turning {
+    from {
+        rotate: 0turn;
+    }
+
+    to {
+        rotate: 1turn;
+    }
+}
+
+.paused {
+    animation-play-state: paused;
+    background-color: red;
+}
