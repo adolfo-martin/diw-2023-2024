@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles-tailwind.css">
+</head>
+
+<body class="h-screen grid grid-rows-[auto_auto_1fr_auto] 
+            md:grid-rows-[auto_auto_auto_1fr_auto] 
+            lg:grid-rows-[auto_1fr_auto] lg:grid-cols-[auto_1fr_auto]">
+
+    <header class="bg-my-blue lg:col-span-3">Encabezado</header>
+
+    <nav class="bg-my-orange hidden md:block lg:row-start-2 lg:h-full">
+        <ul class="flex p-2 gap-2 lg:flex-col lg:h-full">
+            <li class="menu-option">Opción 1</li>
+            <li class="menu-option">Opción 22222222</li>
+            <li class="menu-option">Opción 3</li>
+            <li class="menu-option">Opción 4</li>
+            <li class="menu-option">Opción 5</li>
+        </ul>
+    </nav>
+
+    <main class="bg-my-gray lg:row-start-2">Principal</main>
+
+    <aside class="bg-my-green row-start-1 lg:row-start-2">Publicidad</aside>
+
+    <footer class="bg-my-blue lg:row-start-3 lg:col-span-3">Adolfo 2024</footer>
+
+</body>
+
+</html>

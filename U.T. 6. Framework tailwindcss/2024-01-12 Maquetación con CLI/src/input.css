@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .menu-option {
+        @apply grow text-center bg-my-green basis-[0px] lg:grid lg:place-content-center;
+    }
+}
