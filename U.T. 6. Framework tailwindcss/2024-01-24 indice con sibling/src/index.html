@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+    <nav class="bg-amber-400 text-amber-900 font-bold mb-4">
+        <ul class="flex flex-col gap-4">
+            <li><a href="#"><label for="tRadParagraph1">Párrafo 1</label></a></li>
+            <li><a href="#"><label for="tRadParagraph2">Párrafo 2</label></a></li>
+            <li><a href="#"><label for="tRadParagraph3">Párrafo 3</label></a></li>
+            <li><a href="#"><label for="tRadParagraph4">Párrafo 4</label></a></li>
+        </ul>
+    </nav>
+
+    <div class="flex flex-col gap-4">
+        <input class="hidden peer/par1" type="radio" name="paragraph" id="tRadParagraph1">
+        <p class="peer-checked/par1:text-red-600 
+            peer-checked/par1:duration-[3000ms]">Lorem ipsum dolor sit, amet
+            consectetur
+            adipisicing elit. Ullam,
+            optio!</p>
+
+        <input class="hidden peer/par2" type="radio" name="paragraph" id="tRadParagraph2">
+        <p class="peer-checked/par2:text-red-600 peer-checked/par2:duration-[3000ms]">Quam quasi ratione necessitatibus
+            id tenetur recusandae quos aliquam
+            voluptatibus.</p>
+
+        <input class="hidden peer/par3" type="radio" name="paragraph" id="tRadParagraph3">
+        <p class="peer-checked/par3:text-red-600 peer-checked/par3:duration-[3000ms]">Ducimus quibusdam qui sit itaque
+            omnis sapiente labore explicabo hic?
+        </p>
+
+        <input class="hidden peer/par4" type="radio" name="paragraph" id="tRadParagraph4">
+        <p class="peer-checked/par4:text-red-600 peer-checked/par4:duration-[3000ms]">Officia pariatur corporis nihil
+            maxime temporibus modi fugiat quod
+            illo.
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>

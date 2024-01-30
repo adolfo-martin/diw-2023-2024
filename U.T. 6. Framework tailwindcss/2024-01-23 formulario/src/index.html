@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="h-screen grid place-content-center">
+
+    <form class="flex flex-col gap-4">
+        <label>
+            Usuario
+            <input value="adolfo.martin"
+                class="disabled:bg-slate-100 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none"
+                disabled type="text">
+        </label>
+
+        <label class="">
+            <span class="">Usuario</span>
+            <input class="invalid:border-pink-500 invalid:text-pink-600" required type="text">
+        </label>
+
+        <label class="hover:bg-blue-500">
+            <span class="">Usuario</span>
+            <input class="" type="text">
+        </label>
+
+        <label class="group">
+            <span class="group-hover:bg-blue-500">Usuario</span>
+            <input class="group-hover:bg-blue-500" type="text">
+        </label>
+
+
+        <label class="">
+            <span class="">Usuario</span>
+            <input class="peer invalid:border-red-500 focus:invalid:border-none" type="text" required>
+            <p class="invisible peer-invalid:visible text-red-500">Por favor, introduce un nombre de usuario</p>
+        </label>
+
+        <p>Hola</p>
+    </form>
+
+</body>
+
+</html>

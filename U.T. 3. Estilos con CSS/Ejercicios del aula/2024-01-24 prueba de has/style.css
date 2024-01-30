@@ -1,0 +1,12 @@
+/* ol:has(li) {
+    color: blue;
+} */
+
+:is(h1, h2)+p {
+    color: orange;
+}
+
+/* h1+p,
+h2+p {
+    color: orange;
+} */
